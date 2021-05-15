@@ -7,9 +7,9 @@ app.listen( process.env.PORT || 5000, () => console.log("Server starting..."))
 app.use(express.json());
 
 let items = [
-    {id: 1, name: 'book1'},
-    {id: 2, name: 'book2'},
-    {id: 3, name: 'book3'},
+    {id: 1, name: 'book 1'},
+    {id: 2, name: 'book 2'},
+    {id: 3, name: 'book 3'},
 ]
 
 app.get('/items', (req, res) => {

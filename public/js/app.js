@@ -8,7 +8,7 @@ function requestItem(response) {
     const newUl = document.createElement('ul');
     for (let item of items) {
         const li = document.createElement('li');
-        li.textContent = "book id: " + item.id + "| book name:  " + item.name;
+        li.textContent = "☛ book id: " + item.id + "   ☯ | book name:  " + item.name;
         newUl.appendChild(li);
         document.body.appendChild(newUl);
     }
@@ -17,7 +17,6 @@ function requestItem(response) {
 function addItemList(event) {
     const id = document.querySelector('#itemId').value;
     const item = document.querySelector('#itemName').value;
-    if (id === "" && item === "") return;
     let newItem = {
         id: parseInt(id),
         name: item
