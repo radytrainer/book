@@ -23,14 +23,14 @@ function addItemList(event) {
         name: item
     };
 
-    const url = "http://localhost:3000/items";
+    const url = "https://phnom-leap.herokuapp.com/items";
     axios
         .post(url, newItem)
         .then(requestItem);
 
 }
 
-const url = "http://localhost:3000/items";
+const url = "https://phnom-leap.herokuapp.com/items";
 axios
     .get(url)
     .then(requestItem)
