@@ -17,6 +17,7 @@ function requestItem(response) {
 function addItemList(event) {
     const id = document.querySelector('#itemId').value;
     const item = document.querySelector('#itemName').value;
+    if (id === "" && item === "") return;
     let newItem = {
         id: parseInt(id),
         name: item

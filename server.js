@@ -2,8 +2,8 @@
 const express = require('express');
 const app = express();
 const {idList} = require('./check_id')
-const port = 3000;
-app.listen(port, () => console.log("Server starting..."))
+
+app.listen( process.env.PORT || 5000, () => console.log("Server starting..."))
 app.use(express.json());
 
 let items = [
