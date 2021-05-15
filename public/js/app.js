@@ -8,7 +8,7 @@ function requestItem(response) {
     const newUl = document.createElement('ul');
     for (let item of items) {
         const li = document.createElement('li');
-        li.textContent = "ID: " + item.id + " / " + item.name;
+        li.textContent = "book id: " + item.id + "| book name:  " + item.name;
         newUl.appendChild(li);
         document.body.appendChild(newUl);
     }
