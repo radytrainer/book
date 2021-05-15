@@ -7,7 +7,7 @@ function requestItem(res) {
         idList.push(item.id);
     }
 }
-const url = "http://localhost:3000/items"
+const url = "https://phnom-leap.herokuapp.com/items"
 axios
     .get(url)
     .then(requestItem)
